@@ -1,0 +1,32 @@
+
+{% if name %}
+<h1>Recetas de {{name}}: </h1>
+
+
+  {% if receta %}
+    {% for i in receta %}
+
+<p> Receta de {{i.titulo}}: </p></br>
+<p> {{i.descripcion}} </p>
+
+    {% endfor %}
+    {% else  %}
+
+Usuario {{name}} no tiene ninguna receta almacenada.
+  {% endif %}
+
+{% elif receta %}
+</br><p><b> Recetas de {{receta[0].usuario}}</b> </p></br>
+  {% for i in receta %}
+    {% if i.usuario!=aux %}
+  </br><p><b> Recetas de {{i.usuario}}</b> </p></br>
+      {% set aux=i.usuario %}
+    {% endif %}
+    <p> Receta de {{i.titulo}}: </p></br>
+
+    <p> {{i.descripcion}} </p>
+  {% endfor %}
+{% else %}
+
+El usuario no tiene ninguna receta.
+{% endif %}

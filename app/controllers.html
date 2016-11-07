@@ -1,0 +1,51 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module controllers</title>
+<meta charset="utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>controllers</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/user/recetas_cocina3/R4-0.1.0/app/mod_auth/controllers.py">/home/user/recetas_cocina3/R4-0.1.0/app/mod_auth/controllers.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;-*-&nbsp;coding:&nbsp;utf-8&nbsp;-*-<br>
+#&nbsp;Import&nbsp;flask&nbsp;dependencies</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-introducir_receta"><strong>introducir_receta</strong></a>()</dt></dl>
+ <dl><dt><a name="-show"><strong>show</strong></a>()</dt></dl>
+ <dl><dt><a name="-show_recetas"><strong>show_recetas</strong></a>()</dt></dl>
+ <dl><dt><a name="-show_recetas_propias"><strong>show_recetas_propias</strong></a>()</dt></dl>
+ <dl><dt><a name="-show_recetas_usuario"><strong>show_recetas_usuario</strong></a>(username)</dt></dl>
+ <dl><dt><a name="-signin"><strong>signin</strong></a>()</dt><dd><tt>Permite&nbsp;a&nbsp;un&nbsp;usuario&nbsp;registrado&nbsp;en&nbsp;el&nbsp;sistema&nbsp;iniciar&nbsp;sesion.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;En&nbsp;caso&nbsp;de&nbsp;que&nbsp;los&nbsp;datos&nbsp;introducidos&nbsp;por&nbsp;el&nbsp;usuario&nbsp;en&nbsp;el&nbsp;formulario&nbsp;de&nbsp;login&nbsp;sean&nbsp;correctos<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;redirige&nbsp;al&nbsp;usuario&nbsp;a&nbsp;una&nbsp;ventana&nbsp;de&nbsp;bienvenida.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;En&nbsp;caso&nbsp;de&nbsp;que&nbsp;los&nbsp;datos&nbsp;introducidos&nbsp;sean&nbsp;incorrectos&nbsp;redirige&nbsp;al&nbsp;usuario&nbsp;de&nbsp;nuevo&nbsp;al&nbsp;página&nbsp;del&nbsp;formulario<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;de&nbsp;login</tt></dd></dl>
+ <dl><dt><a name="-signup"><strong>signup</strong></a>()</dt><dd><tt>Permite&nbsp;a&nbsp;un&nbsp;usuario&nbsp;registrarse&nbsp;en&nbsp;el&nbsp;sistema<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Si&nbsp;no&nbsp;existe&nbsp;un&nbsp;usuario&nbsp;con&nbsp;los&nbsp;datos&nbsp;introducidos&nbsp;en&nbsp;el&nbsp;sistema&nbsp;lo&nbsp;añade&nbsp;al&nbsp;sistema&nbsp;y&nbsp;le&nbsp;redirige&nbsp;a&nbsp;la&nbsp;página&nbsp;de&nbsp;inicio&nbsp;de&nbsp;sesión.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Si&nbsp;existe&nbsp;entonces&nbsp;lo&nbsp;redirige&nbsp;a&nbsp;la&nbsp;página&nbsp;de&nbsp;inicio&nbsp;de&nbsp;sesión.</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>db</strong> = &lt;SQLAlchemy engine='sqlite:////home/user/recetas_cocina3/R4-0.1.0/app/app.db'&gt;<br>
+<strong>g</strong> = &lt;LocalProxy unbound&gt;<br>
+<strong>mod_auth</strong> = &lt;flask.blueprints.Blueprint object&gt;<br>
+<strong>request</strong> = &lt;LocalProxy unbound&gt;<br>
+<strong>session</strong> = &lt;LocalProxy unbound&gt;</td></tr></table>
+</body></html>

@@ -1,0 +1,7 @@
+---
+applications:
+- name: recetas3
+  host: Recetas_cocina3
+  memory: 128M
+  instances: 1
+  path: .
