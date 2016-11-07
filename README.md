@@ -1,4 +1,4 @@
-# web_recetas ![img](https://travis-ci.org/LuisGi93/web_recetas.svg?branch=master)
+# web_recetas ![img](https://travis-ci.org/LuisGi93/semana5IV.svg?branch=master)
 
 Repositorio para la asigantura IV semana 2.
 
