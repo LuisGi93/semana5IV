@@ -1,6 +1,6 @@
 import os
 # Run a test server.
-porta = int(os.getenv('PORT'))
+port = os.getenv('PORT', '5000')
 
 from app import app
-app.run(host='0.0.0.0', port=porta, debug=True)
+app.run(host='0.0.0.0', port=int(port), debug=True)
