@@ -1,6 +1,6 @@
 import os
 # Run a test server.
-port = int(os.getenv('VCAP_APP_PORT', 8080))
+porta = int(os.getenv('PORT'))
 
 from app import app
-app.run(host='0.0.0.0', port=int(port), debug=True)
+app.run(host='0.0.0.0', port=porta, debug=True)
