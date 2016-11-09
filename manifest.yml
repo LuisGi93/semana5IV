@@ -1,7 +1,7 @@
 ---
 applications:
-- name: recetas3
-  host: Recetas_cocina3
-  memory: 128M
+- name: semana5IV
+  host: semana5IV${random-word}
+  memory: 1024M
   instances: 1
   path: .
